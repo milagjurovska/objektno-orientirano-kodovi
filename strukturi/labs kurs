@@ -1,0 +1,49 @@
+#include <iostream>
+using namespace std;
+
+struct Course{
+    char ime[50];
+    int kod;
+    int broj_studenti;
+    char 
+};
+
+struct Student{
+    char ime[50];
+    int indeks;
+    int broj;
+    int niza[50];
+};
+
+int get_most_popular_course(struct Course courses[],int num_courses){
+    int zbir=0;
+
+}
+
+void read1(Student& student1){
+    cin>>student1.ime>>student1.indeks>>student1.broj;
+    for (int i = 0; i < student1.broj; ++i) {
+        cin>>student1.niza[i];
+    }
+}
+
+void read2(Course kurs){
+    cin>>kurs.ime>>kurs.kod;
+}
+
+int main() {
+    Student student1;
+    Course kurs;
+    int n,m;
+    cin>>n>>m;
+    for (int i = 0; i < m; ++i) {
+        read2(kurs);
+    }
+    for (int i = 0; i < n; ++i) {
+        read1(student1);
+    }
+
+    cout<<"Najpopilaren kurs e "<<get_most_popular_course(kurs,m);
+
+    return 0;
+}
